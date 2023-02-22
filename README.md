@@ -2,6 +2,15 @@
 
 Try out the web app: https://monk3ystocks.herokuapp.com/
 
+**UPDATE**: Heroku removed their free tier subscription and the app can no longer be hosted without upgrading to a paid subscription.
+
+Here are some steps if you want your own local version of this app:
+
+1) Clone the `app` folder in this GitHub repo
+2) Create a virtual Python environment and install the libraries in the `requirements.txt` file
+3) Run the `app.py` script which will prompt you to open a URL to your web browser
+4) Use app! 
+
 ### What is Alternative Data?
 Alternative data draws from non-traditional data sources. Fundamental data relies on intrinsic factors such as revenue and earnings, and technical data simply uses price history. Alternative data can be from social media, satellite images, GPS data, etc.
 
@@ -11,6 +20,12 @@ Technical data is based solely on the price history of the stock. Each indicator
 * Momentum
 * Volatility
 * Dollar Volume
+
+### Monk3ystocks App Preview
+
+![monk3ystocks github](https://github.com/rnop/Alternative-and-Technical-Stock-Market-Prediction/blob/master/homepage_png.png "Monk3ystocks Homepage")
+
+![monk3ystocks github](https://github.com/rnop/Alternative-and-Technical-Stock-Market-Prediction/blob/master/SPY_chart.png "SPY Chart and indicators")
 
 ### Trading Mantra
 * Control Your Emotions - The most difficult thing about trading and investing is handling your emotions when decision-making. The worst thing you could do is enter a position solely based on emotion, for example, jumping into Bitcoin during its moon launch to $20,000 so that you don't get FOMO (Fear Of Missing Out). Being able to stay balanced mentally will allow you to think more rationally and become a better trader.
