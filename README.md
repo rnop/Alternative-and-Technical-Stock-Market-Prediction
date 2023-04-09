@@ -2,6 +2,9 @@
 
 **UPDATE**: The app is updated and fully deployed on Azure App Services due to Heroku removing their free tier subscription. Note that Azure's free tier subscription has limited compute/day.
 
+### About
+This project is a web application using Flask that allows users to view historical stock or crypto prices as candlestick charts with buying/selling trading signals generated from a machine learning model trained on alternative and technical data. This application was containerized using Docker and is currently deployed on Azure App Services.
+
 Try out the web app: https://monk3ystocks.azurewebsites.net/
 
 ### Data
