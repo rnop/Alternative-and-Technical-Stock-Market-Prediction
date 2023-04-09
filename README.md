@@ -1,15 +1,8 @@
 # Alternative-and-Technical-Stock-Market-Prediction
 
-Try out the web app: https://monk3ystocks.herokuapp.com/
+**UPDATE**: The app is updated and fully deployed on Azure App Services due to Heroku removing their free tier subscription. Note that Azure's free tier subscription has limited compute/day.
 
-**UPDATE**: Heroku removed their free tier subscription and the app can no longer be hosted without upgrading to a paid subscription.
-
-Here are some steps if you want your own local version of this app:
-
-1) Clone the `app` folder in this GitHub repo
-2) Create a virtual Python environment and install the libraries in the `requirements.txt` file
-3) Run the `app.py` script which will prompt you to open a URL to your web browser
-4) Use app! 
+Try out the web app: https://monk3ystocks.azurewebsites.net/
 
 ### What is Alternative Data?
 Alternative data draws from non-traditional data sources. Fundamental data relies on intrinsic factors such as revenue and earnings, and technical data simply uses price history. Alternative data can be from social media, satellite images, GPS data, etc.
