@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Monk3yStocks App - Predicting Stocks with Machine Learning Using Alternative and Technical Data</title>
+  </head>
+  <body>
+    <div>
+      <h1>Monk3yStocks App - Predicting Stocks with Machine Learning Using Alternative and Technical Data</h1>
+    </div>
+    <div>
+      <form method="POST">
+        <label for="ticker">Enter Ticker Symbol:</label>
+        <input type="text" id="ticker" name="ticker" placeholder="SPY" required>
+        <button type="submit">Submit</button>
+        <ul>
+          <li>Ex. Stocks: SPY, AAPL, NVDA</li>
+          <li>Ex. Cryptocurrencies: BTC-USD, ETH-USD</li>
+        </ul>
+      </form>
+    </div>
+    <div>
+      <br>
+      <img src="data:image/png;base64,{{ chart_data }}" alt="candlestick chart">
+    </div>
+    <div>
+      <h3>Disclaimer: This was just a fun project using machine learning to predict 10-day stock prices using alternative and technical data. Trade at your own risk, this app was not optimized for making money.</h3>
+    </div>
+  </body>
+</html>
