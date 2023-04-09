@@ -1,18 +1,38 @@
-# Alternative-and-Technical-Stock-Market-Prediction
+## Monk3yStocks App - Predicting Stocks Using Alternative and Technical Data
 
 **UPDATE**: The app is updated and fully deployed on Azure App Services due to Heroku removing their free tier subscription. Note that Azure's free tier subscription has limited compute/day.
 
 Try out the web app: https://monk3ystocks.azurewebsites.net/
 
-### What is Alternative Data?
-Alternative data draws from non-traditional data sources. Fundamental data relies on intrinsic factors such as revenue and earnings, and technical data simply uses price history. Alternative data can be from social media, satellite images, GPS data, etc.
+### Data
+#### Alternative Data
+- Investor Survey Market Sentiment
+- Big Mac Index
+- Eurekahedge Hedge Fund Performances
+- Misery Index (Unemployment Rate, Inflation Rate, Misery Index)
 
-### What is Technical Data?
-Technical data is based solely on the price history of the stock. Each indicator is suited to different styles of trading.
-* Trend
-* Momentum
-* Volatility
-* Dollar Volume
+#### Technical Data
+- Exponential Moving Averages
+- Relative Strength Indicator
+- Moving Average Convergence/Divergence
+- Upper and Lower Bollinger Bands
+- Volume
+
+### Machine Learning Models
+- Logistic Regression
+- Naive Bayes Classifier
+- Random Forests
+- XGBoost
+
+### Library Dependencies
+- Flask==2.2.3
+- mplfinance==0.12.9b7
+- numpy==1.24.2
+- pandas==1.5.3
+- Quandl==3.7.0
+- scikit-learn==1.2.2
+- xgboost==1.7.5
+- yfinance==0.2.14
 
 ### Monk3ystocks App Preview
 
