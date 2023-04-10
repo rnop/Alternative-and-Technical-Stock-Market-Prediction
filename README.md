@@ -37,12 +37,6 @@ Try out the web app: https://monk3ystocks.azurewebsites.net/
 - xgboost==1.7.5
 - yfinance==0.2.14
 
-### Monk3ystocks App Preview
-
-![monk3ystocks github](https://github.com/rnop/Alternative-and-Technical-Stock-Market-Prediction/blob/master/homepage_png.png "Monk3ystocks Homepage")
-
-![monk3ystocks github](https://github.com/rnop/Alternative-and-Technical-Stock-Market-Prediction/blob/master/SPY_chart.png "SPY Chart and indicators")
-
 ### Trading Mantra
 * Control Your Emotions - The most difficult thing about trading and investing is handling your emotions when decision-making. The worst thing you could do is enter a position solely based on emotion, for example, jumping into Bitcoin during its moon launch to $20,000 so that you don't get FOMO (Fear Of Missing Out). Being able to stay balanced mentally will allow you to think more rationally and become a better trader.
 * Be Prepared to Lose Sometimes - Nobody wins 100% of the time, not even me. I've lost over $1000 in a single trading day, but the worst part wasn't losing the money, it was the negative after-effects it had on my mental health. Once I traded enough, I began to realize that I wasn't going to win all the time and that the best thing I could do after a loss is to prepare myself even better for the next trade.
