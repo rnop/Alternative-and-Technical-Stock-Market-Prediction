@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Monk3yStocks App - Predicting Stocks with Machine Learning Using Alternative and Technical Data</title>
-  </head>
-  <body>
-    <div>
-      <h1>Monk3yStocks App - Predicting Stocks with Machine Learning Using Alternative and Technical Data</h1>
+<head>
+    <title>Monk3ystocks - Predicting Stocks Using Machine Learning and ChatGPT</title>
+    <!-- Add any additional CSS or JS links here -->
+    <style>
+        .container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px; /* Adjust as needed */
+        }
+
+        .graph {
+            flex: 1; /* Adjust as needed */
+        }
+
+        .text-column {
+            flex: 1; /* Adjust as needed */
+            margin-left: 20px; /* Spacing between graph and text */
+            /* Add more styling for your text column as needed */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Monk3ystocks - 14-Day Buy/Sell Signals Using Machine Learning + ChatGPT Technical Analysis</h1>
+    <h2>Enter Stock Ticker</h2>
+    Examples: SPY, QQQ, BTC-USD
+    <br>
+    * Use at your own financial risk!
+    <br>
+
+    <form action="/" method="post">
+        <input type="text" name="ticker" placeholder="Enter Ticker (e.g., AAPL)">
+        <input type="submit" value="Submit">
+    </form>
+
+    <div class="container">
+        <!-- Plotly graph will be inserted here -->
+        {% if graphJSON %}
+            <div id='divPlotly' class="graph"></div>
+        {% endif %}
+
+        <!-- Text column -->
+        <!-- Text column -->
+        <div class="text-column">
+            <p>{{ response|safe }}</p>
+        </div>
+
     </div>
-    <div>
-      <form method="POST">
-        <label for="ticker">Enter Ticker Symbol:</label>
-        <input type="text" id="ticker" name="ticker" placeholder="SPY" required>
-        <button type="submit">Submit</button>
-        <ul>
-          <li>Ex. Stocks: SPY, AAPL, NVDA</li>
-          <li>Ex. Cryptocurrencies: BTC-USD, ETH-USD</li>
-        </ul>
-      </form>
-    </div>
-    <div>
-      <br>
-      <img src="data:image/png;base64,{{ chart_data }}" alt="candlestick chart">
-    </div>
-    <div>
-      <h3>Disclaimer: This was just a fun project using machine learning to predict 10-day stock prices using alternative and technical data. Trade at your own risk, this app was not optimized for making money.</h3>
-    </div>
-  </body>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+        {% if graphJSON %}
+            var graphs = {{graphJSON | safe}};
+            Plotly.newPlot('divPlotly', graphs);
+        {% endif %}
+    </script>
+
+    
+</body>
 </html>
