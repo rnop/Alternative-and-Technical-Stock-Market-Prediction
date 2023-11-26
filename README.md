@@ -3,7 +3,7 @@
 Try out the web app: [https://monk3ystocks.azurewebsites.net/](https://monk3ystocksazureapp.azurewebsites.net/)
 
 **UPDATES**
-- 11/20/2023: Added ChatGPT functionality for technical analysis using OpenAI's API. Current model: gpt-turbo-3.5
+- 11/20/2023: Added ChatGPT functionality for technical analysis using OpenAI's API. Current model: gpt-3.5-turbo
 - 04/09/2023: Changed deployment to Azure App Services due to Heroku removing its free tier subscription. Note that Azure's free tier subscription has limited compute/day so app may not work with heavy users.
 
 ### App Preview - MSFT Stock with ML Signals and Technical Analysis by ChatGPT
